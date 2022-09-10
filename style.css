@@ -1,0 +1,41 @@
+.boxing{
+    border: 2px solid red;
+}
+body{
+    background-color: #1f1f1f;
+    margin: 0;
+    padding: 0;
+}
+.con1{
+    display: grid;
+    margin: 0;
+    display: flex;
+    height: 600px;
+}
+.con1sec1{
+    height: 600px;
+    flex-grow: 1;
+    width: 50%;
+}
+.con1sec2{
+    width: 50%;
+    display: flex;
+    height: 600px;
+    flex-grow: 1;
+}
+.shape1{
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(images/Sphere_Ring_Laying0000.png);
+    background-size: contain;
+}
+.shape2{
+    height: 400px;
+    width: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(images/Block_Matrix_x3_0001.png);
+    background-size: contain;
+}
