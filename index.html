@@ -6,19 +6,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nico Puelacher</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="con1 boxing">
-        <div class="con1sec1 boxing">
-
+    <header>
+        <div class="branding"></div>
+        <p>Nico Puelacher</p>
+        <ul>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Tupperware">Projects</a></li>
+            <li><a href="#Socials">Socials</a></li>
+        </ul>
+    </header>
+    <div class="container1main boxing">
+        <div class="container1sec1 boxing">
+            <h1>I'm <span class="auto-type"></span></h1>
+            <p>Whenever there is an idea, there is code that can make it happen!</p>
+            <div class="container1button">
+                <a class="button" href="#About">
+                    <span class="buttontext">Get to know me!</span>
+                    <div class="wave"></div>
+                </a>
+            </div>
         </div>
-        <div class="con1sec2 boxing">
-            <div class="shape1"></div>
-            <div class="shape2"></div>
-            <div class="shape3"></div>
-            <div class="shape4"></div>
-            <div class="shape5"></div>
+        <div class="container1sec2 boxing">
+            <div class="container1sec2layer1">
+                <div class="glass"></div>
+                <div class="shape3"></div>
+                <div class="shape1"></div>
+                <div class="shape2"></div>
+            </div>
+            <div class="container1sec2layer2">
+                <div class="shape5"></div>
+                <div class="shape6"></div>
+                <div class="shape4"></div>
+            </div>
         </div>
     </div>
+    <div id="About" class="container2About reveal">
+        <div class="container2Aboutheading">
+            <div class="shape8 shapeleft"></div>
+            <div class="glass2">
+                <h1>About Me</h1>
+            </div>
+            <div class="shape7"></div>
+            <div class="shape9 shaperight"></div>
+        </div>
+        <div class="aboutmedes">
+            <div class="pb"></div>
+            <p>-I'm Nico Puelacher, 19 years old, turning 20 this winter and I'm located near Cologne, Germany. I'm coding since 2019 and continually improving every single day due to the help of plattforms like "The Odin Project". I passed the Abitur 2022, and currently I'm studying Media Communication and Computer Science, B.Sc. at Hochschule-Rhein-Waal-<br><br>-There is this constant interest in how to present information in an aesthetically pleasing, creative and sometimes animated way, that keeps me motivated. I want to bring a new and modern touch to the internet!-</p>
+        </div>
+    </div>
+    <div id="Tupperware" class="containerprojects reveal">
+        <div class="containerprojectsheading">
+            <div class="shape14"></div>
+            <div class="glass2">
+                <h1 class="glass2white">Tupperware</h1>
+            </div>
+            <div class="shape13"></div>
+            <div class="shape15"></div>
+        </div>
+        <div class="containerprojectssec1">
+            <div class="tupperwarebottomtext">
+                <div class="twbg"></div>
+                <p>-My mother-in-law is district manager at Tupperware Hamburg, Germany and asked if there is a way to get an E-Mail based Newsletter page, which sounded perfect for me and my skillset. The page is coded with HTML, CSS and JS. Whenever someone submits to the newsletter his/her data is send directly into the mailbox of my mother-in-law so she can add the data directly into the distributor.-<br><br>-I redesigned the page some weeks ago, because I improved and learned more about alignment, negative margins and interactivity.-<br><br>-The page is fully written in German.-<br><br>-View page: <a href="https://tupperware-newsletter.netlify.app/">Tupperware-Newsletter</a>-</p>
+            </div>
+        </div>
+    </div>
+    <div id="Socials" class="container2About reveal">
+        <div class="container2Aboutheading">
+            <div class="shape29 shapeleft"></div>
+            <div class="glass2">
+                <h1>Socials</h1>
+            </div>
+            <div class="shape27"></div>
+            <div class="shape28 shaperight"></div>
+        </div>
+        <div class="aboutmedes">
+            <a href="https://twitter.com/NPuelacher"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="https://github.com/SetsunaiCodes"><ion-icon name="logo-github"></ion-icon></a>
+            <a href="https://stackoverflow.com/users/19690260/nico-puelacher"><ion-icon name="logo-stackoverflow"></ion-icon></a>
+        </div>
+    </div>
+    <div id="" class="container2Aboutsnake reveal">
+        <div class="container2Aboutheading">
+            <div class="shape29 shapeleft"></div>
+            <div class="glass2">
+                <h1>Snake</h1>
+            </div>
+            <div class="shape27"></div>
+            <div class="shape28 shaperight"></div>
+        </div>
+        <div class="aboutmedessnake">
+            <div class="uppertext">
+                <p>-One of my more complex projects was recreating the popular snake game in JavaScript. You can see the current outcome below and maybe try to beat my highscore!-<br>-My current highscore: 98pts.-</p>
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        <p>2022 | Nico Puelacher</p>
+    </footer>
+
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+            for(var i = 0; i < reveals.length; i++){
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if(revealtop < windowheight - revealpoint){
+                    reveals[i].classList.add('active');
+             }
+             else{
+                reveals[i].classList.remove('active');
+             }
+            }
+
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Nico Puelacher", "a Front-End Dev"],
+            typeSpeed: 80,
+            backSpeed: 80,
+            loop: true
+        })
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </body>
 </html>
