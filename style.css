@@ -147,6 +147,14 @@ header ul a:hover{
     width: 300px;
     background-size: contain;
 }
+.shape400{
+    margin-left: -140px;
+    background-image: url(images/Tube_Short_Standing_3_0001.png);
+    height: 512px;
+    width: 512px;
+    background-size: contain;
+
+}
 .shape4{
     margin-top: -200px;
     margin-right: 55px;
@@ -441,7 +449,7 @@ header ul a:hover{
     border-right: 4px solid #151515;
     border-left: 2px solid #151515;
     border-top: 2px solid #151515;
-    background-image: url(images/ProfileImage.jpg);
+    background-image: url(images/WhatsApp\ Image\ 2022-10-17\ at\ 11.49.29.jpeg);
     height: 350px;
     width: 350px;
     background-size: contain;
